@@ -1,15 +1,21 @@
 /* Global */
 :root {
+    /* Colors */
     --color-white: #ffffff;
     --color-black: #050a13;
     --color-blue: #03e8f9;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
+
+    /* App colors */
     --color-primary: var(--color-black);
     --color-primary-variant: var(--color-gray);
     --color-accent: var(--color-blue);
     --color-accent-variant: var(--color-orange);
     --color-text: var(--color-white);
+
+    /* size */
+    --size-max-width: 1200px;
 }
 
 * {
@@ -55,6 +61,10 @@ button:focus {
     text-align: center;
 }
 
+.max-container {
+    max-width: var(--size-max-width);
+    margin: auto;
+}
 .title {
     font-size: 2.5rem;
     margin: 1rem 0;
@@ -64,6 +74,7 @@ button:focus {
     font-size: 1.3rem;
     margin: 0.5rem 0;
 }
+
 /* Header */
 .header {
     background-color: #050a13;
@@ -153,4 +164,65 @@ button:focus {
     background-color: transparent;
     color: var(--color-text);
     outline: 2px solid var(--color-accent);
+}
+
+/* About */
+.majors {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.major {
+    flex: 1;
+    aspect-ratio: 1/1;
+    background-color: var(--color-primary-variant);
+    padding: 2rem 1rem;
+    color: var(--color-text);
+    height: 280px;
+    border-radius: 1rem;
+    transition: all 300ms ease;
+    cursor: default;
+    box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 0.06),
+        0px 1px 1px -0.5px rgb(0 0 0 / 0.06),
+        0px 3px 3px -1.5px rgb(0 0 0 / 0.06), 0px 6px 6px -3px rgb(0 0 0 / 0.06),
+        0px 12px 12px -6px rgb(0 0 0 / 0.06),
+        0px 24px 24px -12px rgb(0 0 0 / 0.06);
+}
+
+.major__icon {
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+}
+
+.major__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.major:hover .major__icon {
+    transform: rotate(-15deg) scale(1.2);
+}
+
+.careers {
+    text-align: start;
+}
+
+.career {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.career__name {
+    color: var(--color-primary);
+}
+
+.career__period {
+    color: var(--color-primary);
+    font-size: 0.8rem;
 }
