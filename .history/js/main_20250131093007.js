@@ -1,7 +1,7 @@
 //Header 에 페이지 아래로 스크롤시 다크 스타일링 적용 
 const header = document.querySelector(".header");
 
-const headerHeight = header.offsetHeight;
+const headerHeight = header.offsetHight;
 /* 풀어서 하면
 const headerRect = header.getBoundingClientRect();
 console.log(headerRect);
