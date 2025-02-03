@@ -35,6 +35,4 @@ document.addEventListener('scroll', () => {
     } 
     else {
     arrowIcon.style.opacity = 0 
-    }
     });
-

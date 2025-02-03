@@ -23,18 +23,13 @@ const home = document.querySelector('.home__container');
 const homeHeight = home.offsetHeight;
 
 // logic을 위에 넣어도 가능은 하지만 , 너무 복잡하게 하는것보다 함수 하나 당 하나로 분리해두는게 좋음 (유지, 보수에 좋음 )
-document.addEventListener('scroll', ()=> {   
+document.addEventListener('scroll', ()=> {
+    console.log(1 - window.scrollY / homeHeight);
+    
     home.style.opacity = 1 - window.scrollY / homeHeight;
+
 });
 
-// Arrow up , when scroll down ( opacity) 
-const arrowIcon = document.querySelector(".arrow-up");
-document.addEventListener('scroll', () => {
-    if (window.scrollY > headerHeight/2)  {
-    arrowIcon.style.opacity = 1  
-    } 
-    else {
-    arrowIcon.style.opacity = 0 
-    }
-    });
 
+const arrowIcon = document.querySelector(".arrow-up");
+const 

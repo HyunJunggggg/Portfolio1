@@ -27,14 +27,26 @@ document.addEventListener('scroll', ()=> {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const home = document.querySelector('.home__container');
+//     if (!home) {
+//         console.error("Element .home__container not found!");
+//         return;
+//     }
+//     const homeHeight = home.offsetHeight;
+
+//     document.addEventListener('scroll', () => {
+//         const opacity = Math.max(0, 1 - window.scrollY / homeHeight);
+//         home.style.opacity = opacity;
+//     });
+// });
+
+
 // Arrow up , when scroll down ( opacity) 
 const arrowIcon = document.querySelector(".arrow-up");
 document.addEventListener('scroll', () => {
-    if (window.scrollY > headerHeight/2)  {
-    arrowIcon.style.opacity = 1  
-    } 
-    else {
-    arrowIcon.style.opacity = 0 
+    if(window.scrollY > homeHeight/2) {
+        arrowIcon.classList.add('')
     }
-    });
-
+});

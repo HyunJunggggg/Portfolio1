@@ -37,4 +37,3 @@ document.addEventListener('scroll', () => {
     arrowIcon.style.opacity = 0 
     }
     });
-

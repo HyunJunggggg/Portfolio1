@@ -30,11 +30,9 @@ document.addEventListener('scroll', ()=> {
 // Arrow up , when scroll down ( opacity) 
 const arrowIcon = document.querySelector(".arrow-up");
 document.addEventListener('scroll', () => {
-    if (window.scrollY > headerHeight/2)  {
-    arrowIcon.style.opacity = 1  
-    } 
-    else {
-    arrowIcon.style.opacity = 0 
-    }
-    });
-
+    if (window.scrollY > headerHeight);
+    // arrowIcon.style.opacity = 1 - window.screenY/ homeHeight ; 
+    // } else {
+    // arrowIcon.style.opacity = 0 - window.screenY/ homeHeight ; 
+    // }
+);
